@@ -21,10 +21,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install dependencies manually
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install flake8 pytest pytest-cov
 
       - name: Run SuperLinter
         uses: github/super-linter@v4
@@ -32,7 +32,7 @@ jobs:
           run: true
         env:
           RUN_LOCAL: true  # Optional: If you want to use local config for SuperLinter
-          
+
       - name: Create GitHub Issues for TODOs
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
@@ -52,12 +52,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install dependencies manually
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          pip install flake8 pytest pytest-cov
 
       - name: Run tests with coverage
         run: pytest --cov=your_project_folder --maxfail=1 --disable-warnings -q
-
