@@ -1,5 +1,4 @@
 from src.student import Student
-from src.presence import Attendance
 from src.adding_students import add_student, edit_students
 from src.check_attendance import CheckAttendance
 import os

@@ -1,5 +1,4 @@
 import csv
-from datetime import date
 import os
 
 class Student:

@@ -1,5 +1,3 @@
-import os
-import csv
 from src.student import Student
 
 # Adding a student

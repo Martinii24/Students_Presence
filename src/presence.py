@@ -1,5 +1,4 @@
 import csv
-from src.student import Student
 
 class Attendance:
     def __init__(self, date, students_attendance):
