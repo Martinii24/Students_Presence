@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, mock_open
-from student import Student
-from check_attendance import CheckAttendance
+from src.student import Student
+from src.check_attendance import CheckAttendance
 
 
 class TestCheckAttendance(unittest.TestCase):

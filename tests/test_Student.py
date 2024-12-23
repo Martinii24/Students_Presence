@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, mock_open
-from student import Student
+from src.student import Student
 
 
 class TestStudent(unittest.TestCase):

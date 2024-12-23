@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, mock_open
-from presence import Attendance
-from student import Student
+from src.presence import Attendance
+from src.student import Student
 
 
 class TestAttendance(unittest.TestCase):
